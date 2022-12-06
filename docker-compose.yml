@@ -1,0 +1,39 @@
+version: '3.5'
+
+services:
+  database:
+    container_name: nsi_sql
+    image: mysql:5.7
+    restart: unless-stopped
+    ports:
+        - 3307:3306
+    volumes:
+        - ./db/init.sql:/docker-entrypoint-initdb.d/chall_init.sql
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+
+  webapp:
+    container_name: webapp
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8500:80
+    volumes:
+      - ./www/:/var/www/html
+    depends_on:
+      - database
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin_nsi
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    environment:
+      PMA_HOST: database
+      PMA_USER: root
+      PMA_PASSWORD: root
+    depends_on:
+      - database
