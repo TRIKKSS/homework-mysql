@@ -75,7 +75,7 @@
 			echo "<div class='w3-panel'>";
 			
 			echo "<div class='w3-container w3-threequarter'>";
-			echo "<h3>".$resultat["nom_film"]."</h3>";
+			echo "<h3>".htmlentities($resultat["nom_film"])."</h3>";
 			echo "</div>";
 			
 			echo "<div class='w3-container w3-quarter'>";
@@ -85,7 +85,7 @@
 
 			echo "</div>";
 			echo "<div class=\"w3-container w3-quarter\" style=\"padding-bottom:4%;\"><img src=\"/images/poster_film/".$resultat["id_film"]."\"  height=\"145\" style='max-width:90%; max-height:100%'></div>";
-			echo "<div class=\"w3-container w3-threequarter\"><p>".$resultat["description"]."</p></div>";
+			echo "<div class=\"w3-container w3-threequarter\"><p>".htmlentities($resultat["description"])."</p></div>";
 			echo "</div>";
 
 		}
