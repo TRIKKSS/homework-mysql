@@ -1,6 +1,6 @@
 # NSI HOMEWORKS
 
-**simple html/css/php/mysql website devellop for my school homework.
+**simple html/css/php/mysql website developed for my school homework.
 It's probably fully vulnerable if you wan't to play with him x)))\
 I do it only 2 weeks.**
 
@@ -31,4 +31,4 @@ TODO.
 
 *check security issues
 correct some bugs
-(but i'm too tired to do that, was just a homework about mysql at the beginning)*
+(but i'm too tired to do that, that just a homework about mysql at the beginning)*
