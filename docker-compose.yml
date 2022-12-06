@@ -19,7 +19,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - 8500:80
+      - 8001:80
     volumes:
       - ./www/:/var/www/html
     depends_on:
@@ -30,7 +30,7 @@ services:
     container_name: phpmyadmin_nsi
     restart: unless-stopped
     ports:
-      - 8080:80
+      - 8002:80
     environment:
       PMA_HOST: database
       PMA_USER: root

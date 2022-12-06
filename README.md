@@ -1,8 +1,8 @@
 # NSI HOMEWORKS
 
 **simple html/css/php/mysql website devellop for my school homework.
-It's probably fully vulnerable if you wan't to play with him x)))
-I do it in 2 weeks.**
+It's probably fully vulnerable if you wan't to play with him x)))\
+I do it only 2 weeks.**
 
 ## applications ports
 	- administrator credentials : sylvain.durif@cat.com:v3ryS3cr3t@dm1nP4ssw0rd
